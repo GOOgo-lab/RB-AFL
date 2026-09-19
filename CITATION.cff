@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the associated RB-AFL manuscript and this release."
+title: "RB-AFL Reproducibility Package"
+type: software
+version: 1.1.0
+date-released: 2026-09-18
+authors:
+  - name: "RB-AFL authors"
+license: MIT
+abstract: "Code and frozen protocol for 50 training, 20 threshold-calibration, and 41 final-test geographic-vector identities."

@@ -1,0 +1,55 @@
+# Environments and Python caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.nbc
+*.nbi
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+build/
+dist/
+*.egg-info/
+
+# Local data, experiment artifacts, models, and caches
+data/raw/
+data/external/
+data/watermark.png
+runs/
+results/generated/
+models/
+checkpoints/
+caches/
+logs/
+*.pt
+*.pth
+*.npy
+*.npz
+*.pkl
+*.pickle
+
+# Private signing material
+*.key
+*.pem
+!docs/examples/*.pem
+
+# GIS datasets are not committed by default
+*.shp
+*.shx
+*.dbf
+*.prj
+*.cpg
+*.qix
+*.gpkg
+*.geojson
+
+# Editors and OS files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Local smoke runs
+smoke_runs/
