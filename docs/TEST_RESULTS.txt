@@ -1,0 +1,32 @@
+test_exact_hamming_weight_with_ties (test_balanced_quantization.BalancedQuantizationTests.test_exact_hamming_weight_with_ties) ... ok
+test_complete_cache_is_bound_to_source_and_ordered_plan (test_cache_integrity.AttackCacheIntegrityTests.test_complete_cache_is_bound_to_source_and_ordered_plan) ... ok
+test_target_far_then_minimum_frr (test_calibration.CalibrationTests.test_target_far_then_minimum_frr) ... ok
+test_triplet_pools_do_not_cross_internal_partition (test_internal_holdout.InternalHoldoutTests.test_triplet_pools_do_not_cross_internal_partition) ... ok
+test_impostors_are_base_only_not_augmented (test_manuscript_alignment.CalibrationCohortTests.test_impostors_are_base_only_not_augmented) ... ok
+test_versioned_checkpoint_rejects_previous_fields (test_manuscript_alignment.CalibrationCohortTests.test_versioned_checkpoint_rejects_previous_fields) ... ok
+test_dual_signature_and_timestamp_tamper (test_manuscript_alignment.CenterTests.test_dual_signature_and_timestamp_tamper) ... ok
+test_discussion_clean_self_cohort_is_separate (test_manuscript_alignment.DiscussionExportTests.test_discussion_clean_self_cohort_is_separate) ... ok
+test_density_uses_each_segment_midpoint_not_centroid (test_manuscript_alignment.EquationTests.test_density_uses_each_segment_midpoint_not_centroid) ... ok
+test_direction_is_directed_nearest_segment (test_manuscript_alignment.EquationTests.test_direction_is_directed_nearest_segment) ... ok
+test_invalid_inputs_fail (test_manuscript_alignment.EquationTests.test_invalid_inputs_fail) ... ok
+test_point_distance_and_occupancy_use_grid_centers (test_manuscript_alignment.EquationTests.test_point_distance_and_occupancy_use_grid_centers) ... ok
+test_polygon_interior_is_distance_zero_and_holes_are_preserved (test_manuscript_alignment.EquationTests.test_polygon_interior_is_distance_zero_and_holes_are_preserved) ... ok
+test_train_register_verify_tiny_synthetic_data (test_manuscript_alignment.PipelineSmokeTests.test_train_register_verify_tiny_synthetic_data) ... ok
+test_calibrate_stage_calls_fixed_policy (test_manuscript_alignment.ProtocolRevisionTests.test_calibrate_stage_calls_fixed_policy) ... ok
+test_fixed_threshold_stays_fixed_even_if_far_target_fails (test_manuscript_alignment.ProtocolRevisionTests.test_fixed_threshold_stays_fixed_even_if_far_target_fails) ... ok
+test_only_four_manuscript_attacks (test_manuscript_alignment.ProtocolRevisionTests.test_only_four_manuscript_attacks) ... ok
+test_median_ties_and_dimension (test_manuscript_alignment.WatermarkTests.test_median_ties_and_dimension) ... ok
+test_sparse_watermark_xor_round_trip_and_tampering (test_manuscript_alignment.WatermarkTests.test_sparse_watermark_xor_round_trip_and_tampering) ... ok
+test_zero_reference_rejected_and_zero_recovery_is_zero (test_manuscript_alignment.WatermarkTests.test_zero_reference_rejected_and_zero_recovery_is_zero) ... ok
+test_tampering_is_detected (test_signing.SigningTests.test_tampering_is_detected) ... ok
+test_attack_axes_have_valid_baselines_and_strong_deletion (test_study_protocol.ConfigTests.test_attack_axes_have_valid_baselines_and_strong_deletion) ... ok
+test_public_config_is_valid (test_study_protocol.ConfigTests.test_public_config_is_valid) ... ok
+test_exact_disjoint_deterministic_split (test_study_protocol.SplitTests.test_exact_disjoint_deterministic_split) ... ok
+test_incompatible_existing_split_is_rejected (test_study_protocol.SplitTests.test_incompatible_existing_split_is_rejected) ... ok
+test_unordered_pair_count_is_8200 (test_study_protocol.UniquenessTests.test_unordered_pair_count_is_8200) ... ok
+test_zero_event_one_sided_upper_bound (test_study_protocol.UniquenessTests.test_zero_event_one_sided_upper_bound) ... ok
+
+----------------------------------------------------------------------
+Ran 27 tests in 19.491s
+
+OK
