@@ -1,0 +1,122 @@
+{
+  "study": {
+    "name": "RB-AFL manuscript-aligned audit revision",
+    "expected_identities": 111,
+    "split_seed": 20260909,
+    "split_counts": {
+      "train": 50,
+      "calibration": 20,
+      "test": 41
+    },
+    "training_seeds": [
+      20260730,
+      20260731,
+      20260732,
+      20260733,
+      20260734,
+      20260735,
+      20260736,
+      20260737,
+      20260738,
+      20260739
+    ]
+  },
+  "paths": {
+    "source_root": "../data/raw",
+    "watermark": "../data/watermark.png",
+    "external_vector": "",
+    "run_root": "../runs/manuscript_revision_v1_1"
+  },
+  "data": {
+    "grid_size": 256,
+    "density_sigma": 3.0,
+    "augmentations_per_identity": 8,
+    "preparation_seed": 20260729
+  },
+  "watermark": {
+    "bit_length": 256,
+    "required_one_bits": 45,
+    "required_zero_bits": 211,
+    "quantization": "median",
+    "quantization_status": "Confirmed in V12.2.1/V12.2.2 model.py and historical registry records: B=(F>=median(F))"
+  },
+  "training": {
+    "epochs": 40,
+    "batch_size": 8,
+    "learning_rate": 0.001,
+    "weight_decay": 1e-05,
+    "embedding_dim": 256,
+    "triplet_margin": 0.8,
+    "internal_validation_per_identity": 1,
+    "num_workers": 0,
+    "device": "auto",
+    "preload_tensors_to_ram": true,
+    "pin_memory": true,
+    "persistent_workers": true,
+    "prefetch_factor": 4
+  },
+  "calibration": {
+    "split": "calibration",
+    "experiment": "E5",
+    "policy": "predeclared_fixed",
+    "target_far": 0.01,
+    "threshold_step": 0.001,
+    "random_watermark_patterns": 0,
+    "watermark_pattern_seed": 20260911,
+    "fixed_threshold": 0.75
+  },
+  "evaluation": {
+    "split": "test",
+    "fixed_attack_seed": 20260910,
+    "timing_repeats": 10,
+    "eval_batch_size": 64,
+    "attack_cache_workers": 8,
+    "attack_cache_shards_per_identity": 4,
+    "attack_cache_max_shards_per_identity": 12,
+    "attack_cache_longtail_cases_per_shard": 1,
+    "source_cache_workers": 4,
+    "noise_index_workers": 4,
+    "min_available_memory_gb": 8.0,
+    "max_heavy_inflight": 4,
+    "uniform_scale_factors": [
+      0.1,
+      0.3,
+      0.5,
+      0.7,
+      0.9,
+      1.0,
+      1.1,
+      1.3,
+      1.5,
+      1.7,
+      1.9,
+      2.0
+    ],
+    "object_delete_ratios": [
+      0,
+      0.1,
+      0.2,
+      0.3,
+      0.4,
+      0.5
+    ],
+    "object_delete_mask_repeats": 10
+  },
+  "uniqueness": {
+    "split": "test",
+    "experiment": "E5",
+    "pair_mode": "unordered",
+    "directed_pair_reduction": "max",
+    "expected_pairs_per_seed": 820,
+    "expected_total_pair_scores": 8200,
+    "symmetry_tolerance": 1e-12
+  },
+  "efficiency": {
+    "split": "test",
+    "experiment": "E5",
+    "device": "auto",
+    "warmup_repeats": 2,
+    "measured_repeats": 5,
+    "disk_cache_state": "uncontrolled; report hardware and raw repetitions"
+  }
+}
